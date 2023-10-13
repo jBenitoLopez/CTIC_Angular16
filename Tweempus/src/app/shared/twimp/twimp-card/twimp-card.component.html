@@ -1,15 +1,14 @@
 <section class="twimp">
-  <div class="twimp_header">
+  <div *ngIf="twimp" class="twimp_header">
     <img
       class="twimp_header_img"
       [src]="twimp.author.image"
-      [alt]="'Imagen de un twimp'"
-    />
-    <a class="twimp_header_name" href="www.therewego.com" target="_b"
+      [alt]="'Imagen de un twimp'" />
+    <a class="twimp_header_name" [href]="twimp.author.url" target="_b"
       >by {{ twimp.author.fullname }}</a
     >
     <div class="twimp_header_date">
-      Published on {{ twimp.timestamp | date : "MM/dd/yyyy" }}
+      Published on {{ twimp.timestamp | date: 'MM/dd/yyyy' }}
     </div>
   </div>
 

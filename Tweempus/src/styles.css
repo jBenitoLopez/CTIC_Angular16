@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 * {
-  font-family: "Robot", sans-serif;
+  font-family: 'Robot', sans-serif;
 }
 
 body {
@@ -29,4 +29,9 @@ li {
   list-style-type: none;
   list-style-position: inside;
   box-sizing: border-box;
+}
+
+.main {
+  box-sizing: border-box;
+  overflow: hidden;
 }
